@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        section {
+            display: grid;
+            height: 100vh;
+            grid-template-columns: 20% auto auto 20%;
+            /* grid-template-columns: repeat(4,25%) */
+            /* grid-template-columns: [col1] 50% [col2] 50%; */
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            grid-template-rows: repeat(4, 1fr);
+            /* grid-template-rows: 20% 60%; */
+            grid-template-areas:
+                "header1 header2 header3 header4"
+                "nav nav nav nav"
+                "content1 content2 content3 content4 "
+                "footer footer footer footer"
+            ;
+        }
+
+        .area1 {
+            grid-area: header1;
+            background-color: aquamarine;
+        }
+
+        .area2 {
+            grid-area: nav;
+            background-color: chocolate;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: gray;
+        }
+
+        div {
+            font-size: 40px;
+            font-weight: bold;
+            box-shadow: inset 0 0 2px black;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="area1">A</div>
+        <div class="footer">B</div>
+        <div>C</div>
+        <div>D</div>
+        <div class="area2">E</div>
+    </section>
+</body>
+
+</html>

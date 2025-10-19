@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício Grid</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-shadow: inset 0 0 2px black;
+        }
+
+        section {
+            display: grid;
+            height: 100vh;
+            grid-template-columns: [col1-start] 50% [col1-end col2-start] 50% [col2-end];
+            grid-template-rows: [row] 25vh [row] 50vh [row] auto;
+        }
+
+        div {
+            padding: 20px;
+        }
+
+        .item1 {
+            grid-column-start: col1-start;
+            grid-column-end: col2-end;
+            grid-row: 1;
+            background-color: lightgreen;
+        }
+
+        .item2 {
+            grid-row-start: row 2;
+            grid-column-start: col1-end col2-start;
+            grid-column-end: col2-end;
+            background-color: aliceblue;
+        }
+
+        .item3 {
+            grid-row-start: row 2;
+            grid-column-start: col1-start;
+            grid-column-end: col1-end col2-start;
+            background-color: lightcoral;
+        }
+
+        .item4 {
+            grid-row-start: row 3;
+            grid-column-start: col1-start;
+            grid-column-end: col2-end;
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="item1">NAVEGAÇÃO</div>
+        <div class="item2">ARTIGO DIREITA</div>
+        <div class="item3">ARTIGO ESQUERDA</div>
+        <div class="item4">RODAPÉ</div>
+    </section>
+</body>
+
+</html>

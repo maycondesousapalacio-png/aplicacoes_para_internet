@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        form {
+            width: 60%;
+            margin: auto;
+            border-radius: 15px;
+            border: 2px solid gray;
+            padding: 20px;
+        }
+
+        .form_group {
+            margin-bottom: 15px;
+            padding: 5px;
+            border: 1px solid black;
+            border-radius: 7px;
+        }
+
+        label {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <head>Formulário</head>
+
+    <form action="https://sys4soft.com/udemy/forms/index.php" method="post">
+
+        <!-- text -->
+        <div class="form_group">
+            <label for="campo_text">Usuário:</label>
+            <input type="text" name="campo_texto" id="campo_text" placeholder="Nome de Usuário">
+
+        </div>
+
+        <div class="form_group">
+            <input type="email" name="campo_email" multiple>
+        </div>
+
+        <div class="form_group">
+            <label for="campo_senha">Senha:<input type="password" name="campo_senha" id="campo_senha" required></label>
+
+
+        </div>
+
+        <div class="form_group">
+            <input type="number" max="10" min="-1" step="0.01">
+        </div>
+
+        <div class="form_group">
+            <input type="url">
+        </div>
+
+        <hr>
+
+        <div class="form_group">
+            <input type="date">
+        </div>
+
+        <div class="form_group">
+            <input type="time">
+        </div>
+
+        <div class="form_group">
+            <input type="week">
+        </div>
+
+        <div class="form_group">
+            <input type="month">
+        </div>
+
+        <div class="form_group">
+            <input type="color" name="campo_cor" value="#ff0000">
+        </div>
+
+        <div class="form_group">
+            <label>
+                <input type="checkbox" name="check_atualizar" checked value="Atualizar">
+                Atualizar
+            </label>
+            <label>
+                <input type="checkbox" name="check_salvar" value="Salvar">
+                Salvar
+            </label>
+        </div>
+
+        <div class="form_group">
+            <p>Sexo</p>
+            <label>
+                <input type="radio" name="sexo" checked value="masculino">
+                Masculino
+            </label>
+            <label>
+                <input type="radio" name="sexo" value="feminino">
+                Feminino
+            </label>
+            <p>Tipo de Sistema Operacional</p>
+            <label>
+                <input type="radio" name="SO" value="Windows">
+                Windows
+            </label>
+            <label>
+                <input type="radio" name="SO" value="Mac">
+                Mac
+            </label>
+            <label>
+                <input type="radio" name="SO" value="Linux">
+                Linux
+            </label>
+        </div>
+
+        <div class="form_group">
+            <input type="range" name="campo_intervalo" min="0" step="2" max="16" oninput="mostrar(this.value)">
+            <p id="valor_range"></p>
+        </div>
+
+        <input type="hidden" value="escondido" name="campo_escondido">
+
+        <div class="form_group">
+            <label>Selecione uma opção:</label>
+            <select name="campo_selecao" id="" required>
+                <optgroup label="Países">
+                    <option value=""></option>
+                    <option value="pt">Portugal</option>
+                    <option value="br">Brasil</option>
+                    <option value="ao">Angola</option>
+                    <option value="mc">Moçambique</option>
+                    <option value="cv">Cabo Verde</option>
+                </optgroup>
+                <optgroup label="Outros Países">
+                    <option value="fr">França</option>
+                    <option value="de">Alemanha</option>
+                    <option value="es">Espanha</option>
+                </optgroup>
+
+            </select>
+        </div>
+
+        <div class="form_group">
+            <textarea name="campo_textarea" id="" cols="30" rows="10"></textarea>
+        </div>
+
+        <div class="form_group">
+            <label for="campo_opcoes">Indique a opção:</label>
+            <input type="text" name="campo_opcao" id="campo_opcoes" list="lista_dados">
+            <datalist id="lista_dados">
+                <option value="Portugal">
+                <option value="Brasil">
+                <option value="Angola">
+                <option value="Moçambique">
+            </datalist>
+        </div>
+
+        <fieldset>
+            <legend>dados pessoais</legend>
+            <div class="form_group">
+                <label for="apelido"></label>
+                <input type="text">
+            </div>
+        </fieldset>
+
+
+
+        <div class="form_group">
+            <input type="reset" value="Limpar" accesskey="l" title="ctrl + L">
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
+
+    <script>
+        function mostrar(value) {
+            document.getElementById("valor_range").innerHTML = value
+        }
+    </script>
+</body>
+
+</html>

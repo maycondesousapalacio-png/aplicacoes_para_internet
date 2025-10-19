@@ -1,0 +1,89 @@
+* {
+            font-size: 32px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            box-shadow: inset 0 0 2px black;
+            padding: 0;
+            margin: 0;
+        }
+
+        .wrapper {
+            height: 100vh;
+            background-color: white;
+        }
+
+        .container {
+            display: grid;
+            height: 100vh;
+            grid-template-rows: 15vh 20vh auto 10vh;
+            grid-template-columns: 28% 28% 28% auto;
+            gap: 5px;
+            display: grid;
+            background-color: rgb(75, 0, 75);
+            color: white;
+        }
+
+        header {
+            grid-column: 1/5;
+            /*COMEÇA NA PRIMEIRA E TERMINA NA QUINTA POSIÇÃO  */
+        }
+
+        header div {
+            justify-self: end;
+            align-self: center;
+            width: 80px;
+            height: 60px;
+            margin: auto 10px;
+            background-color: rgb(155, 20, 155);
+            color: white;
+        }
+
+        section {
+            grid-column: 1/4;
+            /* COMEÇA NA PRIMEIRA E TERMINA NA QUARTA POSIÇÃO */
+            background-color: white;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 5px;
+        }
+
+        section div {
+            padding: 10px;
+            color: white;
+        }
+
+        section :nth-child(1) {
+            background-color: rgb(38, 6, 182);
+        }
+
+        section :nth-child(2) {
+            background-color: rgb(71, 38, 216);
+        }
+
+        section :nth-child(3) {
+            background-color: rgb(87, 60, 240);
+        }
+
+        aside {
+            grid-column: 4/5;
+            /* COMEÇA NA PRIMEIRA E TERMINA NA QUARTA POSIÇÃO */
+            grid-row: 2/4;
+            background-color: rgb(47, 72, 216);
+            color: white;
+            padding: 20px;
+        }
+
+        article {
+            grid-column: 1/4;
+            grid-row: 3/4;
+            background-color: rgb(125, 125, 258);
+            padding: 10px;
+        }
+
+        footer {
+            grid-column: 1/5;
+            grid-row: 4/5;
+            background-color: rgb(75, 3, 75);
+            padding: 10px;
+            color: white;
+        }

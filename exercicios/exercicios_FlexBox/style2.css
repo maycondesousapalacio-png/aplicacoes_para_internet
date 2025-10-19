@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    color: white;
+}
+
+header{
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: orangered;
+}
+
+section{
+    height: 70%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+}
+
+section .left{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    background-color: blue;
+    flex-grow: 1;
+}
+section .main{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    background-color: blueviolet;
+    flex-grow: 3;
+}
+section .right{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    background-color: green;
+    flex-grow: 1;
+}
+
+footer{
+    height: 15%;
+    background-color: hotpink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
