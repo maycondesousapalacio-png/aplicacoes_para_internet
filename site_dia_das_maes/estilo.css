@@ -1,0 +1,299 @@
+/* ESSAS SÃO AS FONTES IMPORTADAS DO GOOGLE */
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+body {
+    background-color: antiquewhite;
+}
+
+/* FONTE DOS H2-H6 DO SITE */
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+/* CONTIGURAÇÃO DO H1 E TÍTULO DO SITE */
+
+header img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: -15px;
+}
+
+.cabecalho {
+    text-align: center;
+    background-image: radial-gradient(rgb(139, 124, 124), rgb(215, 51, 133));
+    width: 60%;
+    margin: 0 20% 0 20%;
+    padding-bottom: 10px;
+    font-size: 40px;
+    border-radius: 10px;
+    text-shadow: 3px 3px rgb(74, 73, 73);
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+}
+
+header h1 {
+    color: rgb(163, 21, 21);
+    margin-top: -25px;
+}
+
+
+
+
+
+/* ESSA É A ESTILIZAÇÃO DOS 2 ARTIGOS */
+
+article {
+    text-align: center;
+    padding: 5px 5px 5px 5px;
+    background-color: rgb(244, 240, 234);
+    width: 50%;
+    right: 24%;
+    border-radius: 10px;
+    display: inline-block;
+    width: 33%;
+
+}
+
+section a {
+    text-decoration: none;
+    color: rgb(215, 16, 16);
+}
+
+/* ESSA É A CLASSE DAS DUAS IMAGENS DO TEXTO */
+.imagenssite1 {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+}
+
+.imgruim {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+/* ESSAS CLASSE SÃO PARA DEFINIR O FUNDO DO SITE */
+
+.centro {
+    display: flex;
+    flex-direction: row;
+}
+
+.corpo {
+    background-color: antiquewhite;
+    /* background-image: url(img/fundo-site.jpg); */
+    background-size: cover;
+}
+
+/* ESSA É A DIV DA TABELA DE PRESENTES DO SITE*/
+
+table {
+    padding-bottom: 10px;
+}
+
+table td {
+    border: 2px solid black;
+}
+
+.tabela {
+    width: 33%;
+    text-align: center;
+    background: rgb(227, 206, 206);
+    box-shadow: 0 4px 8px o rgb(0, 0, 0, 0.2), 0 6px 20px 0 rgb(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tabela a {
+    text-decoration: none;
+    color: red;
+}
+
+.coisas {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+    padding-bottom: 10px;
+}
+
+/* ESTILIZAÇÃO DA LISTA */
+
+.listacelebracao {
+    background: transparent;
+    margin-bottom: 30px;
+}
+
+/*FORMULÁRIO PARA CRIAÇÃO DO CARTÃO DE DIA DAS MÃES */
+
+.cartao {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(img/fundo-site.jpg);
+    background-size: contain;
+}
+
+form h3 {
+    background-color: aliceblue;
+    width: 200px;
+    text-align: center;
+}
+
+form .textodeclaracao {
+    background-color: aliceblue;
+}
+
+/* ESTILIZAÇÃO DO RODAPÉ */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: antiquewhite;
+}
+
+.numero {
+    display: flex;
+    flex-direction: row;
+    background-color: lightgreen;
+    align-items: center;
+    border-radius: 5px;
+    padding: 0 5px 0 5px;
+}
+
+.whatsapp {
+    width: 30px;
+    height: 30px;
+    margin-right: 7px;
+    color: black;
+}
+
+.insta {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(254, 78, 15);
+    align-items: center;
+    border-radius: 5px;
+    padding: 0 5px 0 5px;
+    margin-left: 45px;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+.instagram {
+    width: 30px;
+    height: 30px;
+    margin-right: 7px;
+}
+
+
+/* RESPONSIVIDADE DO SITE */
+
+
+/* Smartphones (600px para baixo) */
+@media only screen and (max-width: 600px) {
+
+    header img {
+        width: 25px;
+        height: 25px;
+        margin-bottom: -15px;
+    }
+
+    .cabecalho {
+        text-align: center;
+        background-image: radial-gradient(rgb(139, 124, 124), rgb(215, 51, 133));
+        width: 100%;
+        margin: 0;
+        padding-bottom: 10px;
+        font-size: 20px;
+        border-radius: 5px;
+        text-shadow: 3px 3px rgb(74, 73, 73);
+        font-family: "Anton", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        position: relative;
+    }
+
+}
+
+
+/* RESPONSIVIDADE DO SITE */
+
+@media only screen and (max-width: 600px) {
+    .cabecalho {
+        width: 100%;
+        margin: 0;
+    }
+
+    .tabela {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .coisas {
+        width: 100%;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .cartao {
+        display: none;
+    }
+
+}
+
+/* Dispositivos um pouco maiores, mas ainda pequenos (Pequenos Tablets e Smartphones + largos, 600px para cima) */
+@media only screen and (min-width: 600px) {
+    .cabecalho {
+        width: 100%;
+        margin: 0;
+    }
+
+    .tabela {
+        width: 80%;
+    }
+
+}
+
+/*Dispostivos Médios (Tablets deitados, 768px para cima) */
+@media only screen and (min-width: 768px) {
+    .cabecalho {
+        width: 100%;
+        margin: 0;
+    }
+
+    .tabela {
+        min-width: 60%;
+        max-width: 70%;
+        padding-right: 40px;
+    }
+
+    .tabela h1 {
+        text-align: center;
+    }
+
+}
+
+/* Dispostivos Largos (laptops/desktops, 992px para cima) */
+@media only screen and (min-width: 992px) {}
+
+/* Super Largos (Telas maiores laptops, desktops e até TVs, 1200px para cima) */
+@media only screen and (min-width: 1200px) {}

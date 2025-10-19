@@ -1,0 +1,134 @@
+/* ESTILO DO MENU PRINCIPAL */
+nav {
+    border: 1px solid rgb(218, 98, 158);
+    border-radius: 5px;
+    background-color: rgb(218, 98, 158);
+    padding: 0;
+    width: 60%;
+    margin: 0 20% 0 20%;
+    position: relative;
+    bottom: 50px;
+    right: 1px;
+
+}
+
+.menu-list {
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+}
+
+.menu-item,
+.menu-item-dropdown {
+    position: relative;
+}
+
+/* ESTILIZAÇÃO DOS LINKS */
+
+.menu-item a,
+.menu-item-dropdown a {
+    text-align: center;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    text-shadow: none;
+    padding: 15px 20px;
+    border: 2px solid red;
+    border-radius: 3px;
+    color: black;
+}
+
+
+/* QUANDO O MOUSE PASSAR POR CIMA O ITEM MUDA PARA A COR: 
+   O TERCEIRO CHAMAMENTO SERVE PARA O LI DROPDOWN FICAR ATIVADO QUANDO PASSAR O MOUSE PELAS OPÇÕES DO MENU DROPDOWN*/
+
+.menu-item a:hover,
+.menu-item-dropdown a:hover,
+.menu-item-dropdown:hover .dropbtn {
+    background-color: aliceblue;
+}
+
+/* ESTILO DO DROPDOWN */
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 25px;
+}
+
+
+
+.dropdown-menu li a {
+    width: 50px;
+    height: 30px;
+    border: 2px solid red;
+
+}
+
+/* MOSTRAR DROPDOWN QUANDO O MOUSE PASSAR POR CIMA */
+
+.menu-item-dropdown:hover .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    width: 110px;
+    padding: 10px 0 10px 0;
+}
+
+/* DEFINIR A COR PADRÃO DOS LINKS DO DROPDOWN */
+
+.dropdown-menu a {
+    background-color: rgb(218, 98, 158);
+}
+
+
+/* RESPONSIVIDADE DO DROPDOWN */
+
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+
+    .menu-item a,
+    .menu-item-dropdown a,
+    .dropdown-menu li a {
+        border: none;
+    }
+
+    nav {
+        width: 100%;
+        margin: 0;
+        top: 5px;
+    }
+
+    .menu-item a,
+    .menu-item-dropdown a,
+    .dropdown-menu li a {
+        padding: 5px 8px;
+        font-size: 5;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .menu-item a,
+    .menu-item-dropdown a,
+    .dropdown-menu li a {
+        border: none;
+    }
+
+    nav {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 992px) and (max-width: 992px) {
+
+    .menu-item a,
+    .menu-item-dropdown a,
+    .dropdown-menu li a {
+        border: none;
+    }
+}
+
+@media only screen and (min-width: 992px) {}
